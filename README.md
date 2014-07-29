@@ -41,3 +41,6 @@ git clone git@github.com:henvic/accidents.git
 ```
 
 If you're new to git and GitHub see the [GitHub Guides](https://guides.github.com/).
+
+## License
+Licensed under the [MIT license](http://henvic.mit-license.org/).
