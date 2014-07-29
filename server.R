@@ -32,13 +32,13 @@ shinyServer(function(input, output) {
     lib.renderFrequencyTable(entries, get(frequencyFunction));
   });
 
-  output$distQuantitativeTable <- renderTable({
+  output$distQualitativeTable <- renderTable({
     dataset <- lib.getData(input$dataset);
 
     entries <- lib.getDeathsByStates(dataset);
     states <- lib.getDeathsStates(dataset);
 
-    lib.renderQuantitativeTable(entries, states);
+    lib.renderQualitativeTable(entries, states);
   });
 
   output$distProperties <- renderText({
@@ -91,7 +91,7 @@ shinyServer(function(input, output) {
       return(NULL);
     }
 
-    if (input$graph == "Quantitative") {
+    if (input$graph == "Qualitative") {
       plotFunction <- paste("lib.plotFunctions.", input$plot, sep = "");
 
       if (!exists(plotFunction)) {

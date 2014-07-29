@@ -4,7 +4,7 @@ graphsAvailable <- c(
   "Histogram",
   "Normal distribution",
   "Hypothesis test",
-  "Quantitative"
+  "Qualitative"
 );
 
 hypothesisTestTypeAvailable <- c(
@@ -20,7 +20,7 @@ hypothesisTestSamples <- c(
 
 frequencyFunctionAvailable <- c("square", "sturges", "scott", "FD");
 
-quantitativeGraph <- c(
+qualitativeGraph <- c(
   "pie",
   "bar"
 );
@@ -57,14 +57,14 @@ shinyUI(fluidPage(
                     value = 5)
       ),
       conditionalPanel(
-        condition = "input.graph == 'Quantitative'",
-        radioButtons("plot", "Plot type", choices = quantitativeGraph),
+        condition = "input.graph == 'Qualitative'",
+        radioButtons("plot", "Plot type", choices = qualitativeGraph),
         hr(),
-        h2("Quantitative Frequency"),
-        tableOutput("distQuantitativeTable")
+        h2("Qualitative Frequency"),
+        tableOutput("distQualitativeTable")
       ),
       conditionalPanel(
-        condition = "input.graph != 'Quantitative'",
+        condition = "input.graph != 'Qualitative'",
         radioButtons("frequencyFunction", "Interval function",
                      frequencyFunctionAvailable),
         hr(),

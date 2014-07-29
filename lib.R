@@ -188,7 +188,7 @@ lib.renderFrequencyTable <- function(entries, intervalsFunction) {
   return(transform(out, cumFreq = cumsum(Freq), relative = prop.table(Freq)));
 }
 
-lib.renderQuantitativeTable <- function(frequency, labels) {
+lib.renderQualitativeTable <- function(frequency, labels) {
   relative <- paste(
     lib.escape.decimal((frequency / sum(frequency) * 100), 2),
     "%", sep = "");
