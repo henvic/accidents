@@ -73,7 +73,7 @@ shinyUI(fluidPage(
       ),
       htmlOutput("about")
     ),
-    
+
     mainPanel(
       verbatimTextOutput("distProperties"),
       plotOutput("distPlot"),
