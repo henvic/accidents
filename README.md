@@ -16,14 +16,27 @@ Project theme: workplace accidents in Brazil.
 You may find it worth to use the [RStudio IDE](http://www.rstudio.com/) (Integrated Development Environment).
 
 ## Deploying
-You can easily download and deploy this program locally inside a R shell, if you have Shiny:
+You can fast deploy this program in a just few seconds with
 
 ```
-runGitHub("accidents", "henvic");
+R -e "shiny::runGitHub('accidents', 'henvic');"
 ```
 
-## Drawbacks
-The code currently doesn't take too much attention to memory / processing. For large datasets it may take a while for it to load. Caching could be used to avoid this, but it's not really a bottleneck for the choose accidents dataset so this decision was deferred and for this case it turned out to be acceptable to defer it indefinitely because the benefits would be pointless in terms of performance and slightly bad for code quality / simplicity.
+This will download the last version of the program and run it.
+
+## Possible improvements
+* lib.R code could be more OO
+* Server.R has linting problems
+* Caching
+
+### Caching
+The code doesn't cache almost anything because the tradeoff would be code quality and the benefits weren't enough to justify it, even thought when loading the 2002-2009 dataset we can notice there's a evident bottleneck.
+
+The caching decision was deferred and, then, once complete, deferred indefinitely.
+
+> We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. ~ [Donald Knuth](http://cs.stanford.edu/~uno/)
+
+The parsing of the CSV file with the construction of the raw data table seems to be one of the most costly operations but no statistics were taken to prove this claim.
 
 ## Docs
 * [The Shiny Cheat sheet](http://shiny.rstudio.com/articles/cheatsheet.html)
@@ -34,11 +47,6 @@ The code currently doesn't take too much attention to memory / processing. For l
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using the R [lint](http://cran.r-project.org/web/packages/lint/index.html) package.
 
 Read the [Google's R Style Guide](http://google-styleguide.googlecode.com/svn/trunk/Rguide.xml) and try to follow it.
-
-To clone this repo:
-```
-git clone git@github.com:henvic/accidents.git
-```
 
 If you're new to git and GitHub see the [GitHub Guides](https://guides.github.com/).
 
