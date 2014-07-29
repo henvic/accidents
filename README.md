@@ -15,6 +15,13 @@ Project theme: workplace accidents in Brazil.
 
 You may find it worth to use the [RStudio IDE](http://www.rstudio.com/) (Integrated Development Environment).
 
+## Web-available demo
+Before downloading the app you can [try it on-line](http://henvic.shinyapps.io/accidents/) at **http://henvic.shinyapps.io/accidents/**
+
+Shiny uses a web-based UI + [socket.io](http://socket.io/) to sync it with the R logic on the server-side.
+
+App kindly hosted for free at the [ShinyApps.io](https://www.shinyapps.io) cloud.
+
 ## Deploying
 You can fast deploy this program in a just few seconds with
 
