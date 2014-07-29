@@ -5,6 +5,7 @@ Author: Henrique Vicente <henriquevicente@gmail.com>, others
 Maintainer: Henrique Vicente <henriquevicente@gmail.com>, others
 Depends: R (>= 3.1.0)
 License: MIT
+DisplayMode: Showcase
 Description: Statistics homework.
 Imports:
     shiny
