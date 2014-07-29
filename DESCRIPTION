@@ -1,0 +1,15 @@
+Package: accidents
+Title: Workplace accidents in brazilian states (http://github.com/henvic/accidents)
+Version: 0.1
+Author: Henrique Vicente <henriquevicente@gmail.com>, others
+Maintainer: Henrique Vicente <henriquevicente@gmail.com>, others
+Depends: R (>= 3.1.0)
+License: MIT
+Description: Statistics homework.
+Imports:
+    shiny
+    visualizationTools
+Suggests:
+    lint
+Collate:
+    'lib.R'
