@@ -11,7 +11,9 @@ shinyServer(function(input, output) {
     'scrolling="0"',
     'width="170"',
     'height="30"',
-    '></iframe>'));
+    '></iframe>',
+    sep = ''
+    ));
   
   output$distTable <- renderTable({
     frequencyFunction <- paste("lib.intervalFunctions.",
