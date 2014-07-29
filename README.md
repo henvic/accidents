@@ -7,7 +7,6 @@ Project theme: workplace accidents in Brazil.
 
 **data/accidents-compiled.csv** has data compiled between the 2002-2009 period.
 
-
 ## Tools and dependencies
 * [R runtime](http://cran.rstudio.com/) >= 3.1.1
 * [Shiny](http://shiny.rstudio.com/) by RStudio: A web application framework for R
