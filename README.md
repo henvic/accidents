@@ -30,8 +30,9 @@ R -e "shiny::runGitHub('accidents', 'henvic');"
 
 This will download the last version of the program and run it.
 
-## Possible improvements
-* lib.R code could be more OO
+## Possible simple improvements
+* lib.R code could be more organized
+* Interval functions options could be dynamically added to the UI
 * Server.R has linting problems
 * Caching
 
