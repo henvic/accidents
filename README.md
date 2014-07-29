@@ -57,5 +57,10 @@ Read the [Google's R Style Guide](http://google-styleguide.googlecode.com/svn/tr
 
 If you're new to git and GitHub see the [GitHub Guides](https://guides.github.com/).
 
+### Authors
+* [Leo Schettini](leoschettini2@gmail.com) - [@leoschet](https://github.com/leoschet)
+* [Henrique Vicente](henriquevicente@gmail.com) - [@henvic](https://github.com/henvic)
+* [Mario Cardoso](mcbsf@cin.ufpe.br)
+
 ## License
 Licensed under the [MIT license](http://henvic.mit-license.org/).

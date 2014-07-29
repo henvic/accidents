@@ -1,8 +1,12 @@
 Package: accidents
 Title: Workplace accidents in brazilian states (http://github.com/henvic/accidents)
 Version: 0.1
-Author: Henrique Vicente <henriquevicente@gmail.com>, others
-Maintainer: Henrique Vicente <henriquevicente@gmail.com>, others
+Author:
+    Henrique Vicente <henriquevicente@gmail.com>
+    Leo Schettini <leoschettini2@gmail.com>
+    Mario Cardoso <mcbsf@cin.ufpe.br>
+    others
+Maintainer: Henrique Vicente <henriquevicente@gmail.com>
 Depends: R (>= 3.1.0)
 License: MIT
 DisplayMode: Showcase
